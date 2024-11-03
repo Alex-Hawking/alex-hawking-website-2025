@@ -655,7 +655,7 @@
 <!-- === Markup === -->
 {#if isMounted}
   <div
-    class="tree-container relative flex flex-col justify-center items-center font-mono whitespace-pre bg-bg leading-none w-screen h-40vh overflow-hidden"
+    class="tree-container relative flex flex-col justify-center items-center font-mono whitespace-pre bg-bg leading-none w-screen h-35vh overflow-hidden"
     style="clip-path: inset(0 0 0 0);"
     bind:this={container}
   >

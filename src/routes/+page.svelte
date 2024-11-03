@@ -54,7 +54,7 @@
 
   // Function to check if the screen is mobile
   function checkScreenSize() {
-    isMobile = window.innerWidth < 768; 
+    isMobile = window.innerWidth < 768;
   }
 
   // Open and close functions for Project Overlay
@@ -225,16 +225,16 @@
     setTimeout(() => {
       animationClass = "";
 
-      console.clear()
+      console.clear();
       console.log(
-      "%cHello Nerd!\n%cWelcome to my website.\nThe source code is on GitHub:%c https://github.com/Alex-Hawking/. %c\nThe bonsai tree is also inspired by cbonsai (to give credit): %c https://gitlab.com/jallbrit/cbonsai%c. \nThis website was built with Svelte and Tailwind.",
-      "color: #FFD23F; font-size: 16px; font-weight: bold;",    // "Hello Nerd!"
-      "color: #FFFFFF; font-size: 14px;",                      // " Welcome to my website. The source code is on "
-      "color: #009FFD; font-size: 14px;",                      // " https://github.com/Alex-Hawking/. "
-      "color: #FFFFFF; font-size: 14px; font-style: italic;", 
-      "color: #009FFD; font-size: 14px;",   // "The bonsai tree is also inspired by cbonsai (to give credit)."
-      "color: #51CB20; font-size: 14px;"                       // " This website was built with Svelte and Tailwind."
-    );
+        "%cHello Nerd!\n%cWelcome to my website.\nThe source code is on GitHub:%c https://github.com/Alex-Hawking/. %c\nThe bonsai tree is also inspired by cbonsai (to give credit): %c https://gitlab.com/jallbrit/cbonsai%c. \nThis website was built with Svelte and Tailwind.",
+        "color: #FFD23F; font-size: 16px; font-weight: bold;", // "Hello Nerd!"
+        "color: #FFFFFF; font-size: 14px;", // " Welcome to my website. The source code is on "
+        "color: #009FFD; font-size: 14px;", // " https://github.com/Alex-Hawking/. "
+        "color: #FFFFFF; font-size: 14px; font-style: italic;",
+        "color: #009FFD; font-size: 14px;", // "The bonsai tree is also inspired by cbonsai (to give credit)."
+        "color: #51CB20; font-size: 14px;", // " This website was built with Svelte and Tailwind."
+      );
     }, 1500);
 
     // Initialize event scheduling and leaf fall
@@ -255,8 +255,6 @@
       document.removeEventListener("visibilitychange", handleVisibilityChange);
       window.removeEventListener("resize", checkScreenSize);
     });
-
-
   });
 </script>
 

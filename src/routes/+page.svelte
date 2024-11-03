@@ -299,7 +299,7 @@
   </h3>
 
   <!-- Sub Headings -->
-  <h5 class="font-mono text-white font-light mt-6 text-xs">
+  <h5 class="font-mono text-white font-light my-4 text-xs">
     <span class="hidden md:inline">
       <span class="text-blue">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cybersecurity
@@ -324,7 +324,7 @@
 
   <!-- Buttons for Overlays -->
   <div
-    class="text-white font-mono text-xs md:text-sm flex items-center justify-center mt-6"
+    class="text-white font-mono text-xs md:text-sm flex items-center justify-center my-4"
   >
     <button
       on:click={openProjectOverlay}
@@ -350,7 +350,7 @@
   </div>
 
   <!-- Social Icons -->
-  <div class="text-white mt-6 inline-flex space-x-6">
+  <div class="text-white mt-4 inline-flex space-x-6">
     <a
       href="https://github.com/Alex-Hawking/"
       target="_blank"

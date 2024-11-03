@@ -80,7 +80,6 @@
    * Starts the animation loop if it's not already running.
    */
   export function rain() {
-    console.log("Rain triggered");
     rainIntensity = 600; // Increased intensity for longer rain duration
     if (animationFrameId === null) animateWeather(); // Start animation loop if not active
   }
@@ -90,7 +89,6 @@
    * Starts the animation loop if it's not already running.
    */
   export function snow() {
-    console.log("Snow triggered");
     snowIntensity = 150; // Increased intensity for longer snow duration
     if (animationFrameId === null) animateWeather(); // Start animation loop if not active
   }

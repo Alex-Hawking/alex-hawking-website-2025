@@ -526,7 +526,7 @@
     // Remove 'leaf' class from the original leaf
     originalLeaf.classList.remove("leaf");
 
-    clonedLeaf.classList.add("clone");
+    clonedLeaf.classList.add("clone", "text-sm");
 
     // Set the cloned leaf's style to match the original's position
     clonedLeaf.style.position = "absolute";

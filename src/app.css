@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wind-power: 0px;
+}
+
+body {
+  @apply !overflow-hidden bg-bg;
+}
+
+button {
+  @apply !cursor-pointer;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.wind-gust {
+  @apply animate-wind-gust;
+}
+
+.spin {
+  @apply animate-spin;
+}
+
+.particle {
+  @apply fixed top-0 left-0 pointer-events-none text-white font-mono z-50;
+  will-change: transform;
+}
+
+.rain-drop {
+  @apply absolute text-blue animate-rain-fall;
+  font-size: 1rem;
+}
+
+.snow-drop {
+  @apply absolute text-white animate-snow-fall;
+  font-size: 1rem;
+}
+
+.weather-container {
+  @apply fixed inset-0 pointer-events-none overflow-hidden z-50;
+}
+
+.leaf {
+  @apply transition duration-[2000ms];
+}
+.tree-fade-in {
+  @apply animate-tree-fade-in;
+}
+
+.snow-highlight {
+  @apply !text-white;
+}
+
+.pulse {
+  @apply animate-pulse;
+}

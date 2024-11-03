@@ -106,7 +106,7 @@
         - Click event to trigger fade-out and close the overlay.
       -->
       <button
-        class="absolute top-2 right-2 m-2 font-light text-md text-white bg-bg p-1 transform transition-transform duration-300 ease-in-out hover:scale-105"
+        class="absolute top-2 right-2 m-2 font-light text-md text-white p-1 transform transition-transform duration-300 ease-in-out hover:scale-105"
         on:click={fadeOutAndClose}
         aria-label="Close overlay"
       >

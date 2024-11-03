@@ -133,6 +133,6 @@
 </script>
 
 <div
-  class="fixed inset-0 pointer-events-none overflow-hidden z-40"
+  class="fixed inset-0 pointer-events-none overflow-x-hidden z-40"
   bind:this={weatherContainer}
 ></div>

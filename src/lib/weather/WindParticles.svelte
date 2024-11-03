@@ -104,7 +104,7 @@
              translate-y-[var(--y)]
              rotate-[var(--rotation)]
              text-[var(--size)]
-             overflow-hidden"
+             overflow-x-hidden"
     style="
         --x: {particle.x}px;
         --y: {particle.y}px;

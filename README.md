@@ -1,38 +1,21 @@
-# create-svelte
+# 2025 Personal Site - v1.0
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+![svelte badge](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00) ![tailwind badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![typescripte badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Website Deploy](https://deploy-badge.vercel.app/?url=https://www.alexhawking.dev/&name=website)
 
-## Creating a project
+## Welcome
 
-If you're seeing this, you've probably already done this step. Congrats!
+Welcome to version **1.0** of my 2025 website, [alexhawking.dev](https://alexhawking.dev). This project represents the culmination of my vision to create a sleek, minimalist online presence that combines elegant design with interactive features.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Overview
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+This site is based upon the concept a **minimalist, text-based website** designed to deliver information in a clean and straightforward manner. The site integrates **graphics inspired by cbonsai** and offers **weather-based interactivity** to enhance user engagement and experience. This site is built using Svelte and Tailwind CSS.
 
-## Developing
+## Inspiration
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+The primary inspiration behind this site was to develop a **minimalist, text-centric platform** that doesn't compromise on visual appeal. By integrating a tree generation algorithm inspired by [cbonsai](https://gitlab.com/jallbrit/cbonsai), the website gains a unique artistic touch. Additionally, the inclusion of **weather-based interactivity** adds an element of dynamism, making each visit to the site a fresh and engaging experience.
 
-```bash
-npm run dev
+## Live Site
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Explore the live version of the website at [alexhawking.dev](https://alexhawking.dev).
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+---

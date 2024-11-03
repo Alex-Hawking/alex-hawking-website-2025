@@ -47,7 +47,15 @@
   // Reference to the refresh icon element
   let iconRef: HTMLElement;
 
+  // Reactive variable to track screen size
+  let isMobile = false;
+
   // === Functions ===
+
+  // Function to check if the screen is mobile
+  function checkScreenSize() {
+    isMobile = window.innerWidth < 768; 
+  }
 
   // Open and close functions for Project Overlay
   function openProjectOverlay() {
@@ -216,6 +224,17 @@
     // Remove the initial fade-in animation after 1.5 seconds
     setTimeout(() => {
       animationClass = "";
+
+      console.clear()
+      console.log(
+      "%cHello Nerd!\n%cWelcome to my website.\nThe source code is on GitHub:%c https://github.com/Alex-Hawking/. %c\nThe bonsai tree is also inspired by cbonsai (to give credit): %c https://gitlab.com/jallbrit/cbonsai%c. \nThis website was built with Svelte and Tailwind.",
+      "color: #FFD23F; font-size: 16px; font-weight: bold;",    // "Hello Nerd!"
+      "color: #FFFFFF; font-size: 14px;",                      // " Welcome to my website. The source code is on "
+      "color: #009FFD; font-size: 14px;",                      // " https://github.com/Alex-Hawking/. "
+      "color: #FFFFFF; font-size: 14px; font-style: italic;", 
+      "color: #009FFD; font-size: 14px;",   // "The bonsai tree is also inspired by cbonsai (to give credit)."
+      "color: #51CB20; font-size: 14px;"                       // " This website was built with Svelte and Tailwind."
+    );
     }, 1500);
 
     // Initialize event scheduling and leaf fall
@@ -225,12 +244,19 @@
     // Listen for visibility changes
     document.addEventListener("visibilitychange", handleVisibilityChange);
 
+    // Check screen size
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
     // Cleanup on component destroy
     onDestroy(() => {
       if (masterTimeoutId) clearTimeout(masterTimeoutId);
       if (leafTimeoutId) clearTimeout(leafTimeoutId);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("resize", checkScreenSize);
     });
+
+
   });
 </script>
 
@@ -238,12 +264,12 @@
   <title>Alex Hawking</title>
   <meta
     name="description"
-    content="Alex Hawking is an extremely good description write and fairly average at everything else."
+    content="Alex Hawking is an extremely good description writer and fairly average at everything else."
   />
 </svelte:head>
 
 <div
-  class={`relative flex flex-col items-center justify-center min-h-screen bg-bg overflow-hidden font-light text-sm ${animationClass}`}
+  class={`relative flex flex-col items-center justify-center min-h-screen bg-bg overflow-x-hidden font-light text-sm ${animationClass}`}
 >
   <!-- Weather and Tree Components -->
   <Weather bind:this={weatherRef} {windPower} />
@@ -326,7 +352,7 @@
   </div>
 
   <!-- Social Icons -->
-  <div class="text-white mt-10 inline-flex space-x-6">
+  <div class="text-white mt-6 inline-flex space-x-6">
     <a
       href="https://github.com/Alex-Hawking/"
       target="_blank"
@@ -337,7 +363,7 @@
         hover:scale-110
       "
     >
-      <GithubIcon size="1.5x" />
+      <GithubIcon size={isMobile ? "16" : "20"} />
     </a>
 
     <a
@@ -350,7 +376,7 @@
         hover:scale-110
       "
     >
-      <InstagramIcon size="1.5x" />
+      <InstagramIcon size={isMobile ? "16" : "20"} />
     </a>
 
     <a
@@ -363,7 +389,7 @@
         hover:scale-110
       "
     >
-      <LinkedinIcon size="1.5x" />
+      <LinkedinIcon size={isMobile ? "16" : "20"} />
     </a>
   </div>
 

@@ -315,9 +315,9 @@
       <span class="text-blue"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cyber</span
       >
-      <span class="px-4">&</span>
+      <span class="px-1">&</span>
       <span class="text-orange">Development</span>
-      <span class="px-4">&</span>
+      <span class="px-1">&</span>
       <span class="text-green">Exploring&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
     </span>
   </h5>
@@ -329,7 +329,7 @@
     <button
       on:click={openProjectOverlay}
       class="
-    text-white px-4 py-2 rounded
+    text-white px-4 rounded
     transform transition-transform duration-300 ease-in-out
     hover:scale-105
   "
@@ -340,7 +340,7 @@
     <button
       on:click={openExperienceOverlay}
       class="
-    text-white px-4 py-2 rounded
+    text-white px-4 rounded
     transform transition-transform duration-300 ease-in-out
     hover:scale-105
   "
@@ -350,7 +350,7 @@
   </div>
 
   <!-- Social Icons -->
-  <div class="text-white mt-4 inline-flex space-x-6">
+  <div class="text-white my-4 inline-flex space-x-6">
     <a
       href="https://github.com/Alex-Hawking/"
       target="_blank"

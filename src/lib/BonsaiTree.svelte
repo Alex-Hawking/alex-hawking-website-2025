@@ -398,8 +398,8 @@
     ) as HTMLElement[];
 
     // Define the number of rows and fraction of leaves to highlight
-    const numRowsToHighlight = Math.min(4, treeRows.length); // Top 4 rows
-    const highlightFraction = 0.8; // Apply snow effect to 80% of leaves
+    const numRowsToHighlight = Math.min(4, treeRows.length); 
+    const highlightFraction = 0.8; 
 
     // Add a fade-in effect to leaves after a delay
     setTimeout(() => {
@@ -417,7 +417,7 @@
           }
         }
       }
-    }, 500); // Delay of 500ms before applying the effect
+    }, 500); 
 
     // Remove the highlight after the snow effect ends
     setTimeout(() => {
@@ -428,7 +428,7 @@
           leaf.classList.remove("snow-highlight");
         });
       }
-    }, 11000); // Duration should match the snow effect
+    }, 11000); 
   }
 
   /**
@@ -452,7 +452,7 @@
     // Initial transition settings for a smooth fade-out
     clonedLeaf.style.position = "absolute";
     clonedLeaf.style.pointerEvents = "none";
-    clonedLeaf.style.transition = "opacity 1s ease-out"; // Smooth fade-out over 1 second
+    clonedLeaf.style.transition = "opacity 1s ease-out"; 
 
     /**
      * Updates the leaf's position, rotation, and opacity on each animation frame.

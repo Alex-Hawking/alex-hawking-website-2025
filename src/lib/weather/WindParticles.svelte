@@ -32,7 +32,7 @@
    */
   function generateParticles() {
     const numParticles = Math.floor(windPower / 4) + 1;
-    particles = []; // Reset particles array
+    particles = [];
 
     // Define the vertical range where particles can appear
     const minY = 150;
@@ -87,8 +87,8 @@
    * Resets windPower after 5 seconds to stop particle generation.
    */
   $: if (windPower > 0) {
-    generateParticles(); // Create new particles based on windPower
-    animate(); // Start the animation loop
+    generateParticles();
+    animate(); 
 
     // Reset windPower after 5 seconds to stop generating new particles
     setTimeout(() => {

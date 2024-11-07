@@ -37,10 +37,10 @@
     const containerRect = weatherContainer.getBoundingClientRect();
     const xPosition = Math.random() * containerRect.width;
     drop.style.left = `${xPosition}px`;
-    drop.style.top = `-20px`; // Start slightly above the visible area
+    drop.style.top = `-20px`; 
 
     // Apply a random animation delay to stagger drop appearances
-    const weatherDelay = dropType === "rain" ? 5 : 12; // seconds
+    const weatherDelay = dropType === "rain" ? 5 : 12; 
     const delay = Math.random() * weatherDelay + "s";
     drop.style.animationDelay = delay;
 
@@ -71,7 +71,7 @@
     if (rainIntensity > 0 || snowIntensity > 0) {
       animationFrameId = requestAnimationFrame(animateWeather);
     } else {
-      animationFrameId = null; // Reset when no animations are active
+      animationFrameId = null;
     }
   }
 
@@ -80,8 +80,8 @@
    * Starts the animation loop if it's not already running.
    */
   export function rain() {
-    rainIntensity = 600; // Increased intensity for longer rain duration
-    if (animationFrameId === null) animateWeather(); // Start animation loop if not active
+    rainIntensity = 600; 
+    if (animationFrameId === null) animateWeather(); 
   }
 
   /**
@@ -89,8 +89,8 @@
    * Starts the animation loop if it's not already running.
    */
   export function snow() {
-    snowIntensity = 150; // Increased intensity for longer snow duration
-    if (animationFrameId === null) animateWeather(); // Start animation loop if not active
+    snowIntensity = 150;
+    if (animationFrameId === null) animateWeather(); 
   }
 
   /**
@@ -126,7 +126,7 @@
       cancelAnimationFrame(animationFrameId);
       animationFrameId = null;
     }
-    clearWeather(); // Clean up any remaining drops
+    clearWeather();
   });
 </script>
 
